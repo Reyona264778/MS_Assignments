@@ -33,5 +33,22 @@
 ###################################################################################################
 
 
+#MATCH
 
+val1 = int(input("enter a number : "))
+val2 = int(input("Enter a number : "))
 
+print("\n1. sum\n2. Difference\n3. Division\n4. Multiplication")
+
+c = int(input("Enter your choice:"))
+match c:
+    case 1:
+        print(val1+val2)
+    case 2:
+        print(val1-val2)
+    case 3:
+        print(val1/val2)
+    case 4:
+        print(val1*val2)
+    case _:
+        print("No match found")
