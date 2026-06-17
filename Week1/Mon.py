@@ -102,3 +102,39 @@ print(inp1+inp2)
 # Create a text file, write "Python Training" into it, and read the content back.
 # 20. Handle Division by Zero
 # Write a program that safely divides two numbers using exception handling.
+
+#constants
+
+# from typing import Final
+
+# class Config:
+#     # Class-level constants
+#     API_URL: Final[str] = "https://api.example.com"
+#     TIMEOUT: Final[int] = 30
+
+#     def __init__(self):
+#         # Instance-level constant
+#         self.VERSION: Final[str] = "1.0.0"
+
+
+# # Using the constants
+# print(Config.API_URL)
+# print(Config.TIMEOUT)
+
+# config = Config()
+# print(config.VERSION)
+
+# # ❌ Reassignment (will run, but type checkers will warn)
+# Config.API_URL = "https://new-url.com"   # Warning in mypy/IDE
+# config.VERSION = "2.0.0"                 # Warning in mypy/IDE
+
+
+from typing import Final
+
+PI : Final[float] = 3.14
+
+print(PI)
+PI = 4.12
+print(PI)
+PI : Final[float] = 4.67
+print(PI)

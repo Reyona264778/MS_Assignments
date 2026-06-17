@@ -32,7 +32,7 @@
 
 #===============================================================================
 
-class Solution(object):
+# class Solution(object):
     # def findingDef(self,diff,nums):
     #     if diff in nums:
     #         return nums.index(diff)
@@ -51,26 +51,26 @@ class Solution(object):
 
     
 
-    def twoSum(self, nums, target):
-        seen = {}
+#     def twoSum(self, nums, target):
+#         seen = {}
 
-        for i in range(len(nums)):
-            diff = target - nums[i]
-            print("**********************************",seen)
-            if diff in seen:
-                print("seen[difference]",seen[diff], "and i is", i)
-                return [seen[diff], i]
-            print("num[i]",nums[i])
-            seen[nums[i]] = i
+#         for i in range(len(nums)):
+#             diff = target - nums[i]
+#             print("**********************************",seen)
+#             if diff in seen:
+#                 print("seen[difference]",seen[diff], "and i is", i)
+#                 return [seen[diff], i]
+#             print("num[i]",nums[i])
+#             seen[nums[i]] = i
             
-            print("seen[nums[i]] = i" , seen[nums[i]])
+#             print("seen[nums[i]] = i" , seen[nums[i]])
 
 
-nums = [2,11,7,15]
-target = 9
-obj = Solution()
-result = obj.twoSum(nums,target)
-print(result)
+# nums = [2,11,7,15]
+# target = 9
+# obj = Solution()
+# result = obj.twoSum(nums,target)
+# print(result)
 
 
 # num = [2,7,11]
@@ -86,7 +86,12 @@ print(result)
 
 
 
+#forzenset
 
 
-
+a = ["apple","banana","grapes","banana"]
+d = {'k1':'apple','k2':'banana','k3':'456'}
+b = frozenset(d)
+print("DEMO OF USING FORMATTING :\nthe list in variable a is {}\ncontent in variable d is {} ".format(a,d))
+print(b)
 

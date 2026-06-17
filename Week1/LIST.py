@@ -71,10 +71,12 @@ op = []
 #     print(a, end=" ")
 #     a, b = b, a + b
 
-limit = int(input("Enter the limit :"))
-for i in range(0,limit+1):
-    for j in range(limit-i):
-        print(" ",end="")
-    for k in range(1,i*2):
-        print("*",end="")
-    print("")
+# limit = int(input("Enter the limit :"))
+# for i in range(0,limit+1):
+#     for j in range(limit-i):
+#         print(" ",end="")
+#     for k in range(1,i*2):
+#         print("*",end="")
+#     print("")
+
+
