@@ -2,7 +2,7 @@ s = set()   # while creating{} it will create empty dictionary it will not creat
 s = {78,34,"hi","klj",9.08}
 s2 = {56,32,6,34}
 s.add(56)
-s.remove(100)  #showing error
+# s.remove(100)  #showing error
 s.discard(100)   #dosent shows any error
 s.pop(2)         #because of set is unordered the random element is got poped and index wise pop is not possible
 
