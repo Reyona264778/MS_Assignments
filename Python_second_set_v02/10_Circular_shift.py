@@ -1,7 +1,8 @@
 def rotation(lst,d,n):
     if d =='right':
-        print(lst[-2:]+lst[:-2])
-    
+        print(lst[-n:]+lst[:-n])
+    if d == 'left':
+        print(lst[n:]+lst[:n])
   
 
 lst = [1,2,3,4,5]
