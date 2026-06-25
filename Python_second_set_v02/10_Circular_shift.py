@@ -1,5 +1,5 @@
 def rotation(lst,n,d):
-    
+    ch
 
 lst = [1,2,3,4,5]
 d = input("Enter direction : ")
