@@ -1,0 +1,13 @@
+def flatten(data,res):
+    for i in data:
+        if isinstance(i,list):
+            flatten(i,res)
+        else:
+            res.append(i)
+    
+lst = [23,9.0,['apple','234',[23,65,12]]]
+flattend =[]
+flatten(lst,flattend)
+print(flattend)
+
+
