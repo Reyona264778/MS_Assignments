@@ -168,8 +168,9 @@ def choiceFun(lst):
             case 11:
                 print("\nClearing....")
                 lst.clear()
-                viewList()
+                viewList(lst)
             case 0:
+                print("\n\n Bye...Have a great day!!!!!\n\n")
                 return 0 
 
 
